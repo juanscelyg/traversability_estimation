@@ -1,0 +1,25 @@
+repositories:
+  ctu_mapping:
+    type: git
+    url: https://github.com/norlab-ulaval/ctu_mapping.git
+    version: husky
+  norlab_icp_mapper:
+    type: git
+    url: https://github.com/norlab-ulaval/norlab_icp_mapper.git
+    version: 4ced00b3a76c7aca183984c142ade78d467d6a0d
+  norlab_icp_mapper_ros:
+    type: git
+    url: https://github.com/norlab-ulaval/norlab_icp_mapper_ros.git
+    version: melodic
+  ouster_example:
+    type: git
+    url: https://github.com/ouster-lidar/ouster-sdk.git
+    version: master
+  point_cloud_color:
+    type: git
+    url: https://github.com/ctu-vras/point_cloud_color.git
+    version: master
+  libpointmatcher_ros:
+    type: git
+    url: https://github.com/norlab-ulaval/libpointmatcher_ros.git
+    version: melodic

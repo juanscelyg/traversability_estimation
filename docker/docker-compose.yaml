@@ -1,0 +1,15 @@
+services:
+  trav_est:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+      target: dev
+    stdin_open: true
+    tty: true
+    network_mode: "host"
+    volumes:
+      - ../../traversability_estimation:/root/catkin_ws/src/traversability_estimation
+      - ../../cloud_proc:/root/catkin_ws/src/cloud_proc 
+    environment:
+      - ROS_IP=127.0.0.1
+    command: "/bin/bash"

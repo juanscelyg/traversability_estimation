@@ -1,0 +1,8 @@
+services:
+  trav_est_nvidia:
+    extends:
+      file: docker-compose.yaml
+      service: trav_est
+    environment:
+     - NVIDIA_VISIBLE_DEVICES=all
+    runtime: nvidia
